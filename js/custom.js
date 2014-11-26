@@ -9,7 +9,7 @@
 				message : $('#message2').val(),
 			};
 			$.ajax({
-				url : 'http://api.hurtigtechnologies.com/mail/send.php',
+				url : '//api.hurtigtechnologies.com/mail/send.php',
 				method : 'POST',
 				data : data,
 				success : function (msg) {
