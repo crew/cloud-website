@@ -2,7 +2,7 @@ CrewCloud Project Site
 ======================
 A very simple website based on the Worthy theme that is the landing page for the CrewCloud project
 
-http://cloud.ccs.neu.edu/
+http://cloud.northeastern.me/
 
 Credits
 =======
