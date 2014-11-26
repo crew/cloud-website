@@ -45,7 +45,7 @@
 
 						<!-- header-left start -->
 						<!-- ================ -->
-						<div class="header-left clearfix">
+						<div class="header-left">
 
 							<!-- logo -->
 							<div class="logo smooth-scroll">
@@ -174,32 +174,47 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingOne">
 											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Controller Nodes</a>
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Controller Nodes
+												</a>
 											</h4>
 										</div>
-										<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-											<div class="panel-body">Controller Nodes are the brains of the OpenStack Cluster. Controller Nodes orchestrate all the operations that must happen in the cloud, such as the REST APIs, Instance Creation, and the Horizon Web UI. At any given time CrewCloud has at least 3 redundant Controller nodes that form a High Availability quorum. </div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												Controller Nodes are the brains of the OpenStack Cluster. Controller Nodes orchestrate all the operations that must happen in the cloud, such as the REST APIs, Instance Creation, and the Horizon Web UI. At any given time CrewCloud has at least 3 redundant Controller nodes that form a High Availability quorum.
+											</div>
 										</div>
 									</div>
+
+
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingTwo">
 											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Storage Nodes
-</a>
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													Storage Nodes
+												</a>
 											</h4>
 										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-											<div class="panel-body">Storage Nodes are responsible for Storing and serving the network drives that virtual machines run on, base OS images, and snapshots of virtual machines.  The current Storage node in the CrewCloud has a .7TB Raid 10 Array for redundancy and performance.   </div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body">
+												Storage Nodes are responsible for Storing and serving the network drives that virtual machines run on, base OS images, and snapshots of virtual machines.  The current Storage node in the CrewCloud has a .7TB Raid 10 Array for redundancy and performance. 
+											</div>
 										</div>
 									</div>
+
+
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingThree">
 											<h4 class="panel-title">
-												<a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Compute Nodes</a>
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													Compute Nodes
+												</a>
 											</h4>
 										</div>
-										<div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree" aria-expanded="true">
-											<div class="panel-body">The compute node does most of the heavy lifting in an OpenStack Cloud.  Compute nodes are responsible for running the actual virtual machines.  Each compute node uses its CPU power and Memory to run many virtual machines at the same time using Intel VT technology and the KVM hyper-visor.  At the moment, our compute nodes are Dell Optiplex Desktop machines.</div>
+										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div class="panel-body">
+												The compute node does most of the heavy lifting in an OpenStack Cloud.  Compute nodes are responsible for running the actual virtual machines.  Each compute node uses its CPU power and Memory to run many virtual machines at the same time using Intel VT technology and the KVM hyper-visor.  At the moment, our compute nodes are Dell Optiplex Desktop machines.
+											</div>
 										</div>
 									</div>
 								</div>
